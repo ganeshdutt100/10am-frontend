@@ -45,6 +45,7 @@ Key Features of HTML
     the element, enclosed in angle brackets (< >). It may also include attributes that
     provide additional information about the element.
     Example:
+
     <tagname attribute="value">
 
 12. Closing Tag (End Tag): This part marks the end of the element and is similar to
