@@ -118,11 +118,13 @@ Headings range from <h1> (largest) to <h6> (smallest).
   <li>Item A</li>
   <li>Item B</li>
 </ol>
+
 29. **Unordered List (`<ul>`)**: Items grouped together with no specific order (bullet points by default).
 <ul>
   <li>Item A</li>
   <li>Item B</li>
 </ul>
+
 30. **Nested List**: A list inserted inside an item of another list, which is perfect for creating hierarchical sub-items or dropdown menus.
 <ul>
   <li>Item A
@@ -133,6 +135,7 @@ Headings range from <h1> (largest) to <h6> (smallest).
   </li>
   <li>Item B</li>
 </ul>
+
 31. **Description List (`<dl>`)**: A list of terms (`<dt>`) and their corresponding descriptions or definitions (`<dd>`), which is great for glossaries or key-value pairs.
 <dl>
   <dt>HTML</dt>
