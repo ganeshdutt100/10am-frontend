@@ -112,19 +112,37 @@ Headings range from <h1> (largest) to <h6> (smallest).
     <a href="https://example.com">Visit Example</a>
 27. Images:
     <img src="image.jpg" alt="Description of the image">
-28. Lists:
-o Ordered List:
-<ol>
-<li>Item 1</li>
-<li>Item 2</li>
-</ol>
-o Unordered List:
-<ul>
-<li>Item A</li>
-<li>Item B</li>
-</ul>
 
-29. Tables:
+28. **Ordered List (`<ol>`)**: Items arranged in a specific sequence (numbered by default).
+<ol>
+  <li>Item A</li>
+  <li>Item B</li>
+</ol>
+29. **Unordered List (`<ul>`)**: Items grouped together with no specific order (bullet points by default).
+<ul>
+  <li>Item A</li>
+  <li>Item B</li>
+</ul>
+30. **Nested List**: A list inserted inside an item of another list, which is perfect for creating hierarchical sub-items or dropdown menus.
+<ul>
+  <li>Item A
+    <ul>
+      <li>Nested Item A1</li>
+      <li>Nested Item A2</li>
+    </ul>
+  </li>
+  <li>Item B</li>
+</ul>
+31. **Description List (`<dl>`)**: A list of terms (`<dt>`) and their corresponding descriptions or definitions (`<dd>`), which is great for glossaries or key-value pairs.
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language, the standard language for creating web pages.</dd>
+
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheets, used to style and design the layout of web pages.</dd>
+</dl>
+
+32. Tables:
 <table border="1">
 <tr>
  <th>Column 1</th>
@@ -141,7 +159,7 @@ Applications of HTML
 • Structuring documents for online content.
 HTML 5 introduced several new features and elements to enhance the functionality,
 structure, and presentation of web documents. Some key additions in HTML 5 include:
-30. New Structural Elements:
+33. New Structural Elements:
  <article>: Represents an independent, selfcontained piece of content within a
 document.
 <article>
