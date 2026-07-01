@@ -7,9 +7,29 @@
     <title>Document</title>
     <style>
         /* phone screen  */
-        h1 {
+        /* h1 {
 
             background-color: yellow;
+        } */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        ul {
+            display: none;
+            gap: 20px;
+            list-style: none;
         }
 
 
@@ -20,7 +40,17 @@
 
             }
 
+            ul {
+                display: flex;
+            }
+
+            .bar {
+                display: none;
+            }
+
         }
+
+        /* 
 
         @media (min-width: 700px) {
             h1 {
@@ -29,11 +59,23 @@
             }
 
         }
+
+        */
     </style>
 </head>
 
 <body>
-    <h1>Lorem ipsum dolor sit amet.</h1>
+    <nav>
+        <div class="logo">My Logo</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <div class="bar">
+            ⏸️
+        </div>
+    </nav>
 </body>
 
 </html>
