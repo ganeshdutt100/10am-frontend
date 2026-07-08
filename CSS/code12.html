@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* laptop screen  */
+        /* h1 {
+
+            background-color: yellow;
+        } */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .bar {
+            display: none;
+        }
+
+        .heroSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .heroSection img {
+            width: 300px;
+        }
+
+        .heroSection .text {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* phone screen   */
+        @media (max-width: 500px) {
+            ul {
+                display: none;
+            }
+
+            .bar {
+                display: inline;
+            }
+
+            .heroSection {
+                flex-direction: column-reverse;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">My Logo</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <div class="bar">
+            ⏸️
+        </div>
+    </nav>
+
+
+    <div class="heroSection">
+        <div class="text">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio incidunt dolorem fugiat rem harum
+                dolore voluptate sed deleniti, explicabo animi id tenetur neque error provident accusantium doloribus
+                pariatur delectus beatae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio incidunt dolorem fugiat rem harum
+                dolore voluptate sed deleniti, explicabo animi id tenetur neque error provident accusantium doloribus
+                pariatur delectus beatae.</p>
+        </div>
+        <img src="../task/CSSform.png" alt="">
+    </div>
+</body>
+
+</html>
