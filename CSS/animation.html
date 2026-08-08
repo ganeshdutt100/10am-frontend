@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transition: all 0.8s ease-in;
+        transform-origin: center center;
+        margin: 100px;
+        animation: myAnimation 2s linear infinite;
+      }
+
+      @keyframes myAnimation {
+        /* 0% {
+          background-color: red;
+        }
+        50% {
+          background-color: blue;
+        }
+        100% {
+          background-color: yellow;
+        } */
+
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: yellow;
+        }
+        /* 0% {
+          transform: translateX(0px) rotate(0deg) scale(1);
+        }
+        50% {
+          transform: translateX(200px) rotate(180deg) scale(0.5);
+        }
+        100% {
+          transform: translateX(0px) rotate(360deg) scale(1);
+        } */
+      }
+      .box:hover {
+        /* background-color: blue;
+        border-radius: 50%; */
+
+        /* transform: translateX(200px);
+        transform: translateY(200px);
+        transform: translate(200px, 200px); */
+
+        /* transform: rotate(260deg); */
+
+        /* transform: scale(0.5); */
+        /* transform: scaleX(0.5); */
+
+        /* transform: skewX(20deg);
+        transform: skewY(20deg);
+        transform: skew(20deg, 20deg); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* Add your CSS styles here */
+      /* phone  */
+      h1 {
+        background-color: lightblue;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+      ul {
+        display: none;
+        list-style: none;
+        gap: 20px;
+      }
+      a {
+        color: white;
+      }
+
+      /* laptop   */
+      @media (min-width: 450px) {
+        h1 {
+          background-color: lightcoral;
+        }
+        ul {
+          display: flex;
+        }
+        .bar {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <nav>
+      <div class="logo">logo</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="bar">⏸️</div>
+    </nav>
+  </body>
+</html>
