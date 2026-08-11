@@ -1,37 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- <link rel="stylesheet" href="../output.css"> -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  
+
     <style type="text/tailwindcss">
-        @custom-variant dark (&:where(.dark, .dark *));
+      @custom-variant dark (&:where(.dark, .dark *));
     </style>
     <!-- <style>
         nav .ul{
             background-color: black;
         }
     </style> -->
-</head>
-<body>
-    <nav class="flex  justify-around p-5 bg-amber-600 dark:bg-black dark:text-white" >
-        <div class="logo">logo</div>
-        <ul class="flex gap-3 " >
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Project</li>
-        </ul>
-        <button class="bg-white text-black" onclick="toggleDarkMode()" >Dark Mode</button>
+  </head>
+  <body>
+    <nav
+      class="flex justify-around p-5 bg-amber-600 dark:bg-black dark:text-white"
+    >
+      <div class="logo">logo</div>
+      <ul class="hidden sm:flex gap-3">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Project</li>
+      </ul>
+      <div class="sm:hidden bar text-3xl">⏸️</div>
+      <button class="bg-white text-black" onclick="toggleDarkMode()">
+        Dark Mode
+      </button>
     </nav>
 
     <script>
-        function toggleDarkMode(){
-          document.documentElement.classList.toggle('dark')
-        }
+      function toggleDarkMode() {
+        document.documentElement.classList.toggle("dark");
+      }
     </script>
-</body>
+  </body>
 </html>
