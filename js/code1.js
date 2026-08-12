@@ -16,3 +16,7 @@ console.log(userName);
 const userEmail = "trainerganeshdutt@gmail.com";
 // userEmail = "ganesh";
 console.log(userEmail);
+
+let value = "Some value";
+console.log("name :  ");
+console.log(value);
