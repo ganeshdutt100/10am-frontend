@@ -4,18 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="../code2.js"></script>
+    <!-- <script src="../code2.js"></script> -->
     <style>
       body {
         background-color: rgb(16, 16, 39);
+        color: white;
       }
     </style>
   </head>
   <body>
+    <p id="name">loading...</p>
+    <button onclick="fun()">Click me</button>
+    <script>
+      function fun() {
+        console.log("fun");
+        document.getElementById("name").innerText = " Ganesh Dutt";
+      }
+    </script>
     <!-- <script>
       document.writeln("This is a simple JavaScript code snippet.");
     </script> -->
 
-    <button onclick="fun()">Click me</button>
+    <!-- <button onclick="fun()">Click me</button> -->
   </body>
 </html>
