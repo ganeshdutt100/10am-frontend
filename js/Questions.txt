@@ -1,0 +1,17 @@
+
+nested 
+ATM Cash Withdrawal:
+Verify if the entered pin is correct.
+If correct, check if accountBalance >= withdrawalAmount.
+
+Blood Donation Screening:
+Check if the donor's age >= 18.If eligible by age, check if their weight >= 50 kg.
+
+Driver's License Evaluation:
+Verify if the applicant is >= 18 years old.
+If yes, check whether hasPassedVisionTest === true.
+
+
+University Admission Filter:
+Check if the student has completed high school (hasGraduated === true).
+If graduated, check if their entrance exam score is >=75.
