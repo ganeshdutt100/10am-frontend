@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="num1" placeholder="Enter your first number " />
+    <br />
+    <select id="operator">
+      <option>+</option>
+      <option>-</option>
+      <option>*</option>
+      <option>/</option>
+    </select>
+    <br />
+    <input type="number" id="num2" placeholder="Enter your second number " />
+    <br />
+
+    <button onclick="handleCalculate()">cal=</button>
+
+    <p id="finalResult">loading ...</p>
+
+    <script>
+      function calculater(num1, op, num2) {
+        let result;
+        switch (op) {
+          case "+":
+            result = num1 + num2;
+            break;
+
+          case "-":
+            result = num1 - num2;
+            break;
+
+          case "*":
+            result = num1 * num2;
+            break;
+
+          case "/":
+            if (num2 === 0) return "cannot divide by zero ";
+            result = num1 / num2;
+            break;
+
+          default:
+            return "invalid value";
+        }
+        return result;
+      }
+
+      function handleCalculate() {
+        let val1 = Number(document.querySelector("#num1").value);
+        let op = document.querySelector("#operator").value;
+
+        let val2 = Number(document.querySelector("#num2").value);
+
+        const output = calculater(val1, op, val2);
+
+        document.querySelector("#finalResult").innerText =
+          "Result :  " + output;
+      }
+
+      // switch
+      //  switch (expression) {
+      //  case value1:
+      //stm
+      //  break;
+      //case value2:
+      //stm
+      //break;
+      //default:
+      //stm
+      //}
+
+      // let day = 3;
+
+      //   switch (day) {
+      //   case 1:
+      //   console.log("monday");
+      // break;
+      //case 2:
+      //console.log("tuesday");
+      //break;
+      //default:
+      //console.log("invalid day");
+      //}
+
+      // function fun(a, b) {
+      // return a + b;
+      //}
+
+      //console.log(fun(10, 20));
+    </script>
+  </body>
+</html>
