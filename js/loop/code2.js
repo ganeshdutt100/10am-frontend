@@ -3,6 +3,19 @@
 //   console.log(a);
 //   a++;
 // }
+// let num = 1;
+// let maxLimit = 1000;
+// let result = "";
+//
+// console.log("Searching Started...");
+//
+// while (num <= maxLimit) {
+//   if (num % 7 === 0 && num % 13 === 0) {
+//     result = result + num + " , ";
+//   }
+//   num++;
+// }
+// console.log(result);
 
 // do while
 // let i = 10;
@@ -22,3 +35,13 @@
 // for (let Sname of studentNames) {
 //   console.log(Sname);
 // }
+
+let num = 1;
+let result = "";
+while (num <= 30) {
+  if (num % 5 !== 0) {
+    result = result + num + " , ";
+  }
+  num++;
+}
+console.log(result);

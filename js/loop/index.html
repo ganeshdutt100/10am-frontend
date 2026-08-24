@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let diceValue = 0;
+      let count = 0;
+
+      while (diceValue !== 6) {
+        diceValue = Math.floor(Math.random() * 6) + 1;
+        count++;
+        console.log("Count ", count + "Aaya hai " + diceValue);
+      }
+
+      console.log("Congratulation " + count, " 6  ");
+      //   let value = Math.floor(Math.random() * 6);
+      //   console.log(value);
+    </script>
+  </body>
+</html>
