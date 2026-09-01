@@ -9,14 +9,29 @@ function winner(user, computer) {
     return "tie";
   }
 
-  const playerwin = "";
   if (
     (user === "rock" && computer === "scissors") ||
     (user === "paper" && computer === "rock") ||
     (user === "scissors" && computer === "paper")
   ) {
-    console.log("userWin");
+    return "user win";
   } else {
-    console.log("computer win ");
+    return "computer win";
+  }
+}
+while (true) {
+  let userChoice = prompt("Enter your choice ");
+  if (userChoice === null) {
+    console.log("Game over");
+    break;
+  }
+  let computerChoice = getComputerChoice();
+  console.log("User : ", userChoice, " vs Computer ", computerChoice);
+  console.log("Result  :  ", winner(userChoice, computerChoice));
+
+  let playAgain = prompt("yes/no");
+  if (playAgain === null || playAgain === "no") {
+    console.log("Game over");
+    break;
   }
 }
