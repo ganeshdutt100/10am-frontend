@@ -10,8 +10,24 @@
 // console.log({ ...user, course: "MERN" });
 // console.log(arr1.concat(arr2), "express");
 
-const arr = [12, 45, 67, 8, 654, 32, 45];
-const output1 = Math.max(...arr);
-const output2 = Math.min(...arr);
+// const arr = [12, 45, 67, 8, 654, 32, 45];
+// const output1 = Math.max(...arr);
+// const output2 = Math.min(...arr);
+//
+// console.log(output1);
 
-console.log(output1);
+// key , value
+// {
+//     "name":"Nandini Sharma ",
+//      "age":22,
+// }
+
+// const obj = { name: "GaneshDutt", course: "fs" };
+// const jsonFormat = JSON.stringify(obj);
+//
+// console.log(jsonFormat);
+
+const jsonData = '{"name":"xyz" , "age" :20 }';
+const output = JSON.parse(jsonData);
+
+console.log(output.name);
