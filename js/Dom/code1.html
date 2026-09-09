@@ -17,6 +17,12 @@
   <body>
     <p id="para" class="paraClass">Loading...</p>
     <p id="para" class="paraClass">Lorem ipsum dolor sit amet.</p>
+    <p id="para" class="paraClass">Lorem ipsum dolor sit amet.</p>
+    <p id="para" class="paraClass">Lorem ipsum dolor sit amet.</p>
+    <p id="para" class="paraClass">Lorem ipsum dolor sit amet.</p>
+    <p id="para" class="paraClass">Lorem ipsum dolor sit amet.</p>
+    <p id="para" class="paraClass">Lorem ipsum dolor sit amet.</p>
+    <p id="para" class="paraClass">Lorem ipsum dolor sit amet.</p>
 
     <button onclick="fun()">Click me</button>
     <script>
@@ -36,8 +42,16 @@
       //   console.log(classDemo.length);
       //   console.log(classDemo[0].innerText);
       //
-      //       let selectorDemo = document.querySelector(".paraClass");
-      //       console.log(selectorDemo.innerText);
+      //   let selectorDemo = document.querySelector(".paraClass");
+      //   selectorDemo.innerHTML = "hello world";
+
+      let selectorDemo = document.querySelectorAll(".paraClass");
+      //   selectorDemo[3].innerHTML = "hello world";
+
+      selectorDemo.forEach((x) => {
+        x.innerHTML = "<h3>hello world</h3> ";
+        x.style.color = "yellow";
+      });
     </script>
   </body>
 </html>
