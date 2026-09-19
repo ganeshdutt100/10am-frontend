@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>TIme :</p>
+    <button>❌</button>
+    <button id="open">Open</button>
+
+    <button id="print">print</button>
+    <script>
+      //   let setValue = setTimeout(() => {
+      //     alert("Hello Akash");
+      //   }, 2000);
+      //   clearTimeout(setValue);
+      //       let para = document.querySelector("p");
+      //       let setValue = setInterval(() => {
+      //         let time = new Date();
+      //         // para.innerText = `Time :  ${time.toLocaleTimeString()}`;
+      //         console.log(`Current  Time :  ${time.toLocaleTimeString()}`);
+      //       }, 1000);
+      //
+      //       clearInterval(setValue);
+      document.querySelector("button").addEventListener("click", () => {
+        close();
+      });
+
+      document.querySelector("#open").addEventListener("click", () => {
+        open("https://ganeshdutt.vercel.app");
+      });
+      document.querySelector("#print").addEventListener("click", () => {
+        print();
+      });
+    </script>
+  </body>
+</html>
