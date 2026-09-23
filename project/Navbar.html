@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .sideMenu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 200px;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.26);
+        backdrop-filter: blur(20px);
+        transition: all 0.4s linear;
+        padding: 30px;
+      }
+      .sideMenu.active {
+        right: 0;
+      }
+      .burgerIcon {
+        cursor: pointer;
+      }
+      .closeIcon {
+        font-size: 50px;
+        border: 3px solid white;
+        text-align: center;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="flex bg-gray-950 py-3 text-white justify-around text-2xl">
+      <div class="logo">logo</div>
+      <div class="burgerIcon">☰</div>
+      <div class="sideMenu">
+        <div>
+          <div class="closeIcon">&times;</div>
+        </div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>projects</li>
+          <li>Services</li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      const burgerIcon = document.querySelector(".burgerIcon");
+      const closeMenu = document.querySelector(".closeIcon");
+      const sideMenu = document.querySelector(".sideMenu");
+
+      burgerIcon.addEventListener("click", () => {
+        sideMenu.classList.toggle("active");
+      });
+      closeMenu.addEventListener("click", () => {
+        sideMenu.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>
