@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <button onclick="history.back()"><--</button>
+    <button onclick="history.go('1')">1</button>
+    <button>2</button>
+    <button>3</button>
+
+    <button onclick="history.forward()">--></button>
+  </head>
+  <body>
+    <script>
+      //       console.log(window.navigator.appVersion);
+      //       console.log(window.navigator.userAgent);
+      //       console.log(window.navigator.language);
+      //       console.log(window.navigator.cookieEnabled ? "yes" : "no");
+      //       console.log(window.navigator.onLine ? "yes" : "no");
+      //       console.log(window.navigator.geolocation ? "supported" : "no supported");
+      //
+      //       console.log(window.screen.width);
+      //       console.log(window.screen.height);
+      //       console.log(window.screen.availWidth);
+      //       console.log(window.screen.availHeight);
+      //       console.log(window.screen.colorDepth);
+      //       console.log(window.screen.pixelDepth);
+      //       console.log(window.screen.orientation.type);
+
+      const goBack = () => {
+        window.history.back();
+      };
+      const goForward = () => {
+        window.history.forward();
+      };
+    </script>
+  </body>
+</html>
