@@ -26,21 +26,38 @@
     </style>
   </head>
   <body>
-    <pre>
-    <form action="" onsubmit="return validateForm()">
+    <form action="" onsubmit="return validateForm();">
       <label for="name">Name</label>
-      <input type="text" name="name" id="name" /><span id="dataWarningName"></span>
+      <input type="text" name="name" id="name" oninput="clearWarnings()" /><span
+        id="dataWarningName"
+      ></span>
 
       <label for="email">Email</label>
-      <input type="email" name="email" id="email" /><span id="dataWarningEmail"></span>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        oninput="clearWarnings()"
+      /><span id="dataWarningEmail"></span>
 
       <label for="password">Password</label>
-      <input type="password" name="password" id="password" /><span id="dataWarningPassword"></span>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        oninput="clearWarnings()"
+      /><span id="dataWarningPassword"></span>
 
       <button type="submit">Submit</button>
     </form>
-    </pre>
+
     <script>
+      function clearWarnings() {
+        document.getElementById("dataWarningName").textContent = "";
+        document.getElementById("dataWarningEmail").textContent = "";
+        document.getElementById("dataWarningPassword").textContent = "";
+      }
+
       function validateForm() {
         const name = document.getElementById("name").value;
         const email = document.getElementById("email").value;
@@ -48,25 +65,25 @@
         const spanName = document.getElementById("dataWarningName");
         const spanEmail = document.getElementById("dataWarningEmail");
         const spanPassword = document.getElementById("dataWarningPassword");
-
+        let isValid = true;
         if (name.trim() === "") {
           spanName.textContent = "Name is required";
 
-          return false;
+          isValid = false;
         }
         //
         if (email.trim() === "") {
           spanEmail.textContent = "Email is required";
-          return false;
+          isValid = false;
         }
 
         if (password.length < 8) {
           spanPassword.textContent =
             "Password must be at least 8 characters long";
-          return false;
+          isValid = false;
         }
         //
-        return true;
+        return isValid;
       }
     </script>
   </body>
