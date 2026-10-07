@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="input" />
+    <p id="para">loading...</p>
+    <div class="box"></div>
+    <script>
+      let input = document.querySelector("#input");
+      let output = document.querySelector("#para");
+
+      //   input.addEventListener("keydown", (event) => {
+      //     output.innerText = `key pressed :  ${event.key}`;
+      //   });
+
+      input.addEventListener("keyup", (event) => {
+        output.innerText = `key pressed :  ${event.key}`;
+      });
+
+      input.addEventListener("keypress", (event) => {
+        output.innerText = `key pressed :  ${event.key}`;
+      });
+
+      //   let box = document.querySelector(".box");
+      //   box.addEventListener("dblclick", () => {
+      //     box.style.backgroundColor = "green";
+      //   });
+
+      // box.addEventListener("mouseover", () => {
+      //   box.style.opacity = ".5";
+      // });
+
+      //   box.addEventListener("mouseout", () => {
+      //     box.style.opacity = "1";
+      // });
+    </script>
+  </body>
+</html>
