@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>click me</button>
+    <div class="container"></div>
+    <script>
+      const btn = document.querySelector("button");
+      const container = document.querySelector(".container");
+
+      btn.addEventListener("click", async () => {
+        try {
+          const res = await fetch(
+            "https://jsonplaceholder.typicode.com/users/1",
+          );
+          if (!res.ok) {
+            throw new Error("Server Error ");
+          }
+
+          const user = await res.json();
+          container.innerHTML = `
+          <div>
+            <h3>${user.name}</h3>
+            <p>${user.email}</p>
+       
+
+            </div>
+          `;
+        } catch (err) {
+          container.innerHTML = ` <p style="color:red">err.message</p> `;
+          console.log(err.message);
+        }
+      });
+    </script>
+  </body>
+</html>
