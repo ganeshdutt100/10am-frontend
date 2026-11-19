@@ -1,8 +1,10 @@
 import "./App.css";
+import DependencyDemo from "./components/DependencyDemo";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Todo from "./components/Todo";
 import ToggleBox from "./components/ToggleBox";
+import UseEffect from "./components/UseEffect";
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       {/* <Navbar />
       <HeroSection /> */}
       {/* <ToggleBox /> */}
-      <Todo />
+      {/* <Todo /> */}
+      {/* <UseEffect /> */}
+      <DependencyDemo />
     </>
   );
 }
